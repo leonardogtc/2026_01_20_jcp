@@ -10,8 +10,8 @@ public class ContaTeste {
         Conta conta2 = new Conta("John Blue", -7.53);
 
         // Exibe o saldo inicial
-        System.out.printf("Saldo %s: $%.2f%n", conta1.getNome(), conta1.getSaldo());
-        System.out.printf("Saldo %s: $%.2f%n", conta2.getNome(), conta2.getSaldo());
+        exibirConta(conta1);
+        exibirConta(conta2);
 
         Scanner input = new Scanner(System.in);
         System.out.print("Entre com valor de depósito para conta 1: ");
@@ -28,8 +28,8 @@ public class ContaTeste {
         System.out.println();
 
         // Exibir o nome armazenado no objeto minhaConta
-        System.out.printf("O nome do objeto conta1 é: %s e seu saldo é $%.2f%n", conta1.getNome(), conta1.getSaldo());
-        System.out.printf("O nome do objeto conta2 é: %s e seu saldo é $%.2f%n", conta2.getNome(), conta2.getSaldo());
+        exibirConta(conta1);
+        exibirConta(conta2);
 
         // Realizar saque
         double valorSaque;
@@ -41,10 +41,14 @@ public class ContaTeste {
         System.out.println();
 
         // Exibir o nome armazenado no objeto minhaConta
-        System.out.printf("O nome do objeto conta1 é: %s e seu saldo é $%.2f%n", conta1.getNome(), conta1.getSaldo());
-        System.out.printf("O nome do objeto conta2 é: %s e seu saldo é $%.2f%n", conta2.getNome(), conta2.getSaldo());
+        exibirConta(conta1);
+        exibirConta(conta2);
 
         input.close();
 
+    }
+
+    public static void exibirConta(Conta conta) {
+        System.out.printf("Saldo %s: $%.2f%n", conta.getNome(), conta.getSaldo());
     }
 }
