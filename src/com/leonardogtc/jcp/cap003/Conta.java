@@ -25,6 +25,16 @@ public class Conta {
         }
     }
 
+    // withdraw - retirada ou saque
+    public double saque(double valor) {
+        if(valor <= saldo) {
+            saldo -= valor;
+        } else {
+            System.out.println("Saldo insuficiente");
+        }
+        return saldo;
+    }
+
     // método retorna o saldo da conta
     public double getSaldo() {
         return saldo;

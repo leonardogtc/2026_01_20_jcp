@@ -16,17 +16,33 @@ public class ContaTeste {
         Scanner input = new Scanner(System.in);
         System.out.print("Entre com valor de depósito para conta 1: ");
         double valorDeposito = input.nextDouble();
+        System.out.println();
         System.out.printf("Depositando $%.2f", valorDeposito);
         conta1.deposito(valorDeposito);
-
+        System.out.println();
         System.out.print("Entre com valor de depósito para conta 2: ");
         valorDeposito = input.nextDouble();
         System.out.printf("Depositando $%.2f", valorDeposito);
         conta2.deposito(valorDeposito);
 
+        System.out.println();
+
         // Exibir o nome armazenado no objeto minhaConta
         System.out.printf("O nome do objeto conta1 é: %s e seu saldo é $%.2f%n", conta1.getNome(), conta1.getSaldo());
-        System.out.printf("O nome do objeto conta1 é: %s e seu saldo é $%.2f%n", conta2.getNome(), conta2.getSaldo());
+        System.out.printf("O nome do objeto conta2 é: %s e seu saldo é $%.2f%n", conta2.getNome(), conta2.getSaldo());
+
+        // Realizar saque
+        double valorSaque;
+        System.out.print("Entre com valor de saque para conta 1: ");
+        valorSaque = input.nextDouble();
+        System.out.println();
+        System.out.printf("Saque de $%.2f", valorSaque);
+        conta1.saque(valorSaque);
+        System.out.println();
+
+        // Exibir o nome armazenado no objeto minhaConta
+        System.out.printf("O nome do objeto conta1 é: %s e seu saldo é $%.2f%n", conta1.getNome(), conta1.getSaldo());
+        System.out.printf("O nome do objeto conta2 é: %s e seu saldo é $%.2f%n", conta2.getNome(), conta2.getSaldo());
 
         input.close();
 
