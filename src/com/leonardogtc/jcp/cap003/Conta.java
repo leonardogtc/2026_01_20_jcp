@@ -4,6 +4,11 @@ public class Conta {
     // Variável de instância
     private String nome;
 
+    // Construtor da classe
+    public Conta(String nome) {
+        this.nome = nome;
+    }
+
     // Método para definir o nome no objeto
     public void setNome(String nome) {
         this.nome = nome;

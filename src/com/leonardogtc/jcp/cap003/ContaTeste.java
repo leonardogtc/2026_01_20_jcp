@@ -1,28 +1,15 @@
 package com.leonardogtc.jcp.cap003;
 
-import java.util.Scanner;
-
 public class ContaTeste {
     static void main(String[] args) {
-        // Cria um objeto Scanner para obter entrada a partir da janela de comandos
-        Scanner input = new Scanner(System.in);
 
         // Cria um objeto conta e o atribui a minhaConta
-        Conta minhaConta = new Conta();
-
-        // Exibe o valor inicial do nome (null)
-        System.out.println("Nome: " + minhaConta.getNome());
-
-        // Solicita o lê o nome
-        System.out.print("Digite o nome da conta: ");
-        String Nome = input.nextLine();
-        minhaConta.setNome(Nome);
-        System.out.println();
+        Conta conta1 = new Conta("Jane Green");
+        Conta conta2 = new Conta("John Blue");
 
         // Exibir o nome armazenado no objeto minhaConta
-        System.out.printf("O nome do objeto minhaConta é: %s%n", minhaConta.getNome());
+        System.out.printf("O nome do objeto conta1 é: %s%n", conta1.getNome());
+        System.out.printf("O nome do objeto conta2 é: %s%n", conta2.getNome());
 
-        // Fecha o objeto Input
-        input.close();
     }
 }
