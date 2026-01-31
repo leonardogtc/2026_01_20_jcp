@@ -13,8 +13,8 @@ public class MaximumFinder {
         double num2 = input.nextDouble();
         double num3 = input.nextDouble();
 
-        // Determina o valor máximo
-        double max = maximum(num1, num2, num3);
+        // Determina o valor máximo (com o método maximumMath)
+        double max = maximumMath(num1, num2, num3);
 
         // Exibe o valor máximo
         System.out.println("O valor máximo é: " + max);
@@ -35,5 +35,10 @@ public class MaximumFinder {
         }
 
         return max;
+    }
+
+    // Retorna o valor máximo entre três números usando o método Math.max
+    public static double maximumMath(double num1, double num2, double num3) {
+        return Math.max(Math.max(num1, num2), num3);
     }
 }
