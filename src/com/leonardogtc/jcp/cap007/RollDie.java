@@ -13,7 +13,6 @@ public class RollDie {
 
         System.out.printf("%s%12s%n", "Face", "Frequência");
 
-
         for(int face = 1; face < frequency.length; face++) {
             System.out.printf("%4d%,12d%n", face, frequency[face]);
         }
