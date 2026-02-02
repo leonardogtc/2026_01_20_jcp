@@ -8,13 +8,16 @@ public class InitArray {
         Quando um array é criado, cada um de seus elementos recebe um valor padrão
         — zero para os elementos de tipo primitivo numéricos, false para elementos
         de tipo boolean e null para referências.
+
+        int[] array = new int[10];
          */
-        int[] array = new int[10];  // Cria um objeto Array
+
+        int[] array = {32, 27, 64, 18, 95, 14, 90, 70, 60, 37}; // Inicializador de Array
 
         System.out.printf("%s%8s%n", "Índice", "Valor");
 
         // Gera a saída de cada elemento do array
-        for(int counter = 0; counter < array.length; counter++) {
+        for (int counter = 0; counter < array.length; counter++) {
             System.out.printf("%5d%8d%n", counter, array[counter]);
         }
     }
