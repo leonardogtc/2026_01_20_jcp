@@ -1,4 +1,4 @@
-package com.leonardogtc.jcp.cap006;
+package com.leonardogtc.jcp.cap006.exercicios;
 
 import javax.swing.*;
 import java.awt.*;

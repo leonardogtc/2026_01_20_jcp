@@ -1,4 +1,4 @@
-package com.leonardogtc.jcp.cap006;
+package com.leonardogtc.jcp.cap006.exercicios;
 
 public class E06_01_Test {
     static void main(String[] args) {
