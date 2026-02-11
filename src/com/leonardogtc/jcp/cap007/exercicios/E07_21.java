@@ -220,7 +220,7 @@ public class E07_21 {
 
             // Marcar nova posição se a caneta está para baixo
             if (penDown) {
-                if (currentRow < SIZE && currentCol >= 0 && currentCol < SIZE) {
+                if (currentRow >= 0 && currentRow < SIZE && currentCol < SIZE) {
                     floor[currentRow][currentCol] = 1;
                 }
             }
