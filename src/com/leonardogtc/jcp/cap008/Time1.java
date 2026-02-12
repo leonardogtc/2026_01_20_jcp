@@ -9,6 +9,11 @@ public class Time1 {
     // lança uma exceção se a hora, minuto ou segundo for inválido.
     public void setTime(int hour, int minute, int second) {
         if (hour < 0 || hour >= 24 || minute < 0 || minute >= 60 || second < 0 || second >= 60) {
+            /*
+            O throw em Java é uma palavra-chave usada para lançar explicitamente uma exceção.
+            Quando uma exceção é lançada, o fluxo normal de execução do programa é interrompido,
+            e o sistema tenta encontrar um bloco catch adequado para lidar com essa exceção.
+            * */
             throw new IllegalArgumentException("Hora, minuto e/ou segundo estão fora do range");
         }
         
