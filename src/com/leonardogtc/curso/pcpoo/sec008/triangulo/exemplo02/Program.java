@@ -1,6 +1,6 @@
-package com.leonardogtc.curso.pcpoo.sec008.exemplo02;
+package com.leonardogtc.curso.pcpoo.sec008.triangulo.exemplo02;
 
-import com.leonardogtc.curso.pcpoo.sec008.exemplo02.entities.Triangulo;
+import com.leonardogtc.curso.pcpoo.sec008.triangulo.exemplo02.entities.Triangulo;
 
 import java.util.Locale;
 import java.util.Scanner;

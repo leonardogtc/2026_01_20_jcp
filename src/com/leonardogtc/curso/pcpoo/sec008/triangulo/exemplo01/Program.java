@@ -1,4 +1,4 @@
-package com.leonardogtc.curso.pcpoo.sec008.exemplo01;
+package com.leonardogtc.curso.pcpoo.sec008.triangulo.exemplo01;
 
 import java.util.Locale;
 import java.util.Scanner;
