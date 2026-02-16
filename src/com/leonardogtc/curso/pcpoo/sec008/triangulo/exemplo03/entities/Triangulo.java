@@ -1,4 +1,4 @@
-package com.leonardogtc.curso.pcpoo.sec008.exemplo03.entities;
+package com.leonardogtc.curso.pcpoo.sec008.triangulo.exemplo03.entities;
 
 public class Triangulo {
     private double a;

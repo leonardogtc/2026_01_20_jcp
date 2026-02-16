@@ -1,6 +1,6 @@
-package com.leonardogtc.curso.pcpoo.sec008.exemplo03;
+package com.leonardogtc.curso.pcpoo.sec008.triangulo.exemplo03;
 
-import com.leonardogtc.curso.pcpoo.sec008.exemplo03.entities.Triangulo;
+import com.leonardogtc.curso.pcpoo.sec008.triangulo.exemplo03.entities.Triangulo;
 
 public class Program {
     public static void main(String[] args) {
