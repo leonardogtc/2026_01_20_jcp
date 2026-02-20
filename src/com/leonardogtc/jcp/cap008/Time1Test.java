@@ -1,6 +1,6 @@
 package com.leonardogtc.jcp.cap008;
 
-public class TIme1Test {
+public class Time1Test {
     static void main(String[] args) {
         // Cria e inicializa um objeto Time1
         Time1 time1 = new Time1();
